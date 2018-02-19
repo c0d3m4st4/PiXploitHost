@@ -1,0 +1,18 @@
+[submodule "lightningmods"]
+	path = lightningmods
+	url = https://github.com/LightningMods/PS4-HEN-Update-Blocker-Payload
+[submodule "idc"]
+	path = idc
+	url = https://github.com/idc/ps4-entrypoint-405
+[submodule "xvortex-hen"]
+	path = xvortex-hen
+	url = https://github.com/xvortex/ps4-hen-vtx
+[submodule "xvortex-ftp"]
+	path = xvortex-ftp
+	url = https://github.com/xvortex/ps4-ftp-vtx
+[submodule "xvortex-dumper"]
+	path = xvortex-dumper
+	url = https://github.com/xvortex/ps4-dumper
+[submodule "specter"]
+	path = specter
+	url = https://github.com/Cryptogenic/PS4-4.05-Kernel-Exploit
