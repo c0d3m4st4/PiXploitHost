@@ -81,6 +81,7 @@ Check it is working properly. If you ping any of the above domains, result shoul
 	64 bytes from par03s12-in-f132.1e100.net (172.217.19.132): icmp_seq=1 ttl=53 time=18.9 ms
 	
 	ping manuals.playstation.net
+	
 	PING manuals.playstation.net (**YOUR_RASPBERRY_PI_STATIC_IP**) 56(84) bytes of data.
 	64 bytes from **YOUR_RASPBERRY_PI_STATIC_IP**: icmp_seq=1 ttl=64 time=0.065 ms
 	
@@ -158,8 +159,8 @@ Now, clone the repo and exploit submodules.
     git submodule update
 	
 	
-Moving exploit host files to host directory
--------------------------------------------
+Moving exploit host files to document root directory
+----------------------------------------------------
 
 Run these commands in PiXploitHost directory.
 
