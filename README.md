@@ -3,7 +3,7 @@ PiXploitHost
 
 Use your Raspberry Pi (any model) to host console exploits and protect it against undesired FW upgrades.
 
-All these is made on a Pi with Raspbian Jessie with static IP address on local network. Instead of setting a static IP address on your Pi, you can add a static lease in your router. Both are fine, you just need the Pi to have the same IP all the time.
+All this is made on a Pi with Raspbian Jessie with static IP address on local network. Instead of setting a static IP address on your Pi, you can add a static lease in your router. Both are fine, you just need the Pi to have the same IP all the time.
 
 I wrote the guide after i set it all up on an already set up Raspbian Jessie based home server, hopefully i didn't forget any step, or missed installing any needed package. Report any error, and i will double check.
 
