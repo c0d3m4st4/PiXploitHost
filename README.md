@@ -24,7 +24,7 @@ Add forged DNS entries:
 	
 	sudo nano /etc/dnsmasq.conf
 	
-Add the following lines to the end of the file (repolace YOUR_RASPBERRY_PI_STATIC_IP with your RPi static IP address):
+Add the following lines to the end of the file (replace **YOUR_RASPBERRY_PI_STATIC_IP** with your RPi static IP address):
 
 	# Wii U Update Blocker
 
