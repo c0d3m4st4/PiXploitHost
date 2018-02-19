@@ -67,7 +67,7 @@ Add the following lines to the end of the file (replace **YOUR_RASPBERRY_PI_STAT
 	address=/.sonyentertainmentnetwork.com/127.0.0.1
 	
 	
-Control X to exit nano, then Y + intro to save.
+Control X to exit nano, then Y + enter to save.
 
 Restart service:
 
@@ -112,7 +112,7 @@ Place this text in the file.
 	
 	RedirectMatch 301 /document/[a-z]{2}/ps4(.*) $1
 
-Control X to exit nano, then Y + intro to save.
+Control X to exit nano, then Y + enter to save.
 	
 Edit apache2.conf file to allow redirections:
 	
@@ -132,7 +132,7 @@ Edit like this:
 			Require all granted
 	</Directory>
 
-Control X to exit nano, then Y + intro to save.
+Control X to exit nano, then Y + enter to save.
 	
 Restart Apache to apply changes:
 
