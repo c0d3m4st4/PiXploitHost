@@ -7,6 +7,9 @@ PiXploitHost
 
 https://www.elotrolado.net/hilo_pixploithost-servidor-de-exploits-y-bloqueo-de-actualizaciones-en-una-raspberry-pi_2273155#p1745359498
 
+Description
+-----------
+
 Use your Raspberry Pi (any model) to host console exploits and protect it against undesired FW upgrades.
 
 All this is made on a Pi with Raspbian Jessie with static IP address on local network. Instead of setting a static IP address on your Pi, you can add a static lease in your router. Both are fine, you just need the Pi to have the same IP all the time.
