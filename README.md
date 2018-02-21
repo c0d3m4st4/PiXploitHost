@@ -29,7 +29,7 @@ Install DNSmasq DNS server:
 
 	sudo apt-get install dnsmasq
 
-Add forged DNS entries:	
+Add forged DNS entries in config file:	
 	
 	sudo nano /etc/dnsmasq.conf
 	
@@ -67,11 +67,11 @@ Add the following lines to the end of the file (replace **YOUR_RASPBERRY_PI_STAT
 	address=/.sonyentertainmentnetwork.com/127.0.0.1
 	
 	
-Control X to exit nano, then Y + enter to save.
+Hit Control X to exit nano, followed by Y + enter to save the file.
 
-Restart service:
+Restart the service with the following command:
 
-	sudo service dnsmasq start
+	sudo service dnsmasq restart
 
 Check it is working properly. If you ping any of the above domains, result should be the IP we added to the conf file. Make sure it works!
 
@@ -98,7 +98,7 @@ Install Apache web server
 
 	sudo apt-get install apache2 -y
 
-Set user pi permissions
+Set the proper permissions for user pi
 
 	sudo chown -R pi:www-data /var/www
 	sudo chmod u+rxw,g+rx-w,o-rwx /var/www
@@ -109,23 +109,23 @@ Add a redirect rule in var/www/html/.htaccess file
 
 	nano /var/www/html/.htaccess
 
-Place this text in the file. 	
+Place the following text in the file:
 	
 	RedirectMatch 301 /document/[a-z]{2}/ps4(.*) $1
 
-Control X to exit nano, then Y + enter to save.
+Hit Control X to exit nano, followed by Y + enter to save the file.
 	
-Edit apache2.conf file to allow redirections:
+Edit apache2.conf file to allow redirects:
 	
 	sudo nano /etc/apache2/apache2.conf
 	
-Find
+Find the following text:
 
 	<Directory /var/www/>
 		...
 	</Directory>
 
-Edit like this:
+Edit the entry so it looks like this:
 
 	<Directory /var/www/>
 			Options Indexes FollowSymLinks
@@ -133,7 +133,7 @@ Edit like this:
 			Require all granted
 	</Directory>
 
-Control X to exit nano, then Y + enter to save.
+Hit Control X to exit nano, followed by Y + enter to save the file.
 	
 Restart Apache to apply changes:
 
@@ -143,15 +143,15 @@ Restart Apache to apply changes:
 You can check if Apache is working by accessing http://YOUR_PI_IP from a browser in aany computer in your network.
 	
 
-Cloning this repository
-----------------------
+Cloning PiXploitHost repository
+-------------------------------
 
-First, install git.
+Install git with the following command:
 
 	cd ~	
 	sudo apt-get install -y git dialog
 
-Now, clone the repo and exploit submodules.
+Clone the repo and exploit submodules:
 	
     git clone https://github.com/c0d3m4st4/PiXploitHost.git
     cd PiXploitHost
@@ -162,7 +162,7 @@ Now, clone the repo and exploit submodules.
 Moving exploit host files to document root directory
 ----------------------------------------------------
 
-Run these commands in PiXploitHost directory.
+Run these commands in PiXploitHost directory to delete unnecessary files and move the needed ones to Apache2 document root
 
 	sudo chmod +x moveFiles.sh
     ./moveFiles.sh
@@ -180,7 +180,7 @@ Final steps on your PS4
 - Disable automatic updates (Top menu - Settings - System - Automatic downloads - DISABLE ALL)
 - Network configuration (Top menu - Settings - Network - Set up internet connection - Use cable (or WiFi if that's your case) - Custom - Manual IP address - Manual DNS settings - Primary DNS: **YOUR_RASPBERRY_PI_STATIC_IP** - Scondary DNS: 0.0.0.0 - Automatic MTU - Do not use proxy)
 
-- And that's it. Now if you go to Top menu - Settings - User guide, it should open your new host instead, and you can easily run the exploits.
+- And that's it. Now if you navigate to the user's guide (Top menu - Settings - User's guide), it should open your new host instead of the user guide, and you can easily run the exploits.
 
 Credits
 -------
