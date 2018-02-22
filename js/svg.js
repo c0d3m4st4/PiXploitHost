@@ -1,3 +1,5 @@
+//https://stackoverflow.com/questions/24933430/img-src-svg-changing-the-fill-color
+
 $(function(){
 	
 	//convert svg images to inline
@@ -6,6 +8,8 @@ $(function(){
         var imgID = $img.attr('id');
         var imgClass = $img.attr('class');
         var imgURL = $img.attr('src');
+		var imgOnMouseOver = $img.attr('onmouseover');
+		var imgOnMouseOut = $img.attr('onmouseout');
     
         jQuery.get(imgURL, function(data) {
             // Get the SVG tag, ignore the rest
@@ -19,7 +23,14 @@ $(function(){
             if(typeof imgClass !== 'undefined') {
                 $svg = $svg.attr('class', imgClass+' replaced-svg');
             }
-    
+            // Add replaced image's onmouseover to the new SVG
+            if(typeof imgOnMouseOver !== 'undefined') {
+                $svg = $svg.attr('onmouseover', imgOnMouseOver+' replaced-svg');
+            }			
+            // Add replaced image's onmouseout to the new SVG
+            if(typeof imgOnMouseOut !== 'undefined') {
+                $svg = $svg.attr('onmouseout', imgOnMouseOut+' replaced-svg');
+            }				
             // Remove any invalid XML tags as per http://validator.w3.org
             $svg = $svg.removeAttr('xmlns:a');
             
