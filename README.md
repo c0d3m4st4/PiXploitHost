@@ -1,11 +1,24 @@
 PiXploitHost
 ============
 
-**Spanish guide** 
+Spanish guide - Guía en español
+-------------------------------
 
 **La guía en español la puedes ver en elotrolado.net**
 
 https://www.elotrolado.net/hilo_pixploithost-servidor-de-exploits-y-bloqueo-de-actualizaciones-en-una-raspberry-pi_2273155#p1745359498
+
+
+News
+----
+
+**06/03/2018**
+
+4.55 support
+
+**19/02/2018**
+
+4.05 support
 
 Description
 -----------
