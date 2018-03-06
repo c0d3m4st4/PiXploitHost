@@ -3,27 +3,37 @@
 	
   	<head>
     	<title>PS4 exploits</title>
+		<meta charset="UTF-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     	<link rel="stylesheet" href="../css/exploitHost.css" type="text/css">
-		<script src="../js/jquery-3.3.1.min.js"></script>
+		<script src="../js/jquery-3.3.1.min.js"></script>				
     	<script src="../js/svg.js"></script>
+		<script src="../js/scripts.js"></script>
 		<script src="../js/exploitInfo.js"></script>
   	</head>
 	
   	<body>
   		<header>			
   			<h1>PS4 exploits</h1>
+			<h2><a class="fw_ver" id="fw_405" href="#">4.05</a><a class="fw_ver selected" id="fw_455" href="#">4.55</a></h2>
   		</header>
   		<main>
-			<div id="optionsWrapper">
-				<div class="divExploitOption"><div class="divMenuHeader">Xvortex-HEN</div><div class="divMenuBody"><a href="./exploits/xvortex-hen/index.html"><img class="svg" src="../img/exploit.svg" alt="Xvortex-HEN" onmouseover="showInfo('Xvortex-HEN');" onmouseout="clearInfo();"></a></div></div>
-				<div class="divExploitOption"><div class="divMenuHeader">Xvortex-FTP</div><div class="divMenuBody"><a href="./exploits/xvortex-ftp/index.html"><img class="svg" src="../img/exploit.svg" alt="Xvortex-FTP" onmouseover="showInfo('Xvortex-FTP');" onmouseout="clearInfo();"></a></div></div>
-				<div class="divExploitOption"><div class="divMenuHeader">Xvortex-Dumper</div><div class="divMenuBody"><a href="./exploits/xvortex-dumper/index.html"><img class="svg" src="../img/exploit.svg" alt="Xvortex-Dumper" onmouseover="showInfo('Xvortex-Dumper');" onmouseout="clearInfo();"></a></div></div>
-				<div class="divExploitOption"><div class="divMenuHeader">Specter</div><div class="divMenuBody"><a href="./exploits/specter/index.html"><img class="svg" src="../img/exploit.svg" alt="Specter" onmouseover="showInfo('Specter');" onmouseout="clearInfo();"></a></div></div>
-				<div class="divExploitOption"><div class="divMenuHeader">IDC</div><div class="divMenuBody"><a href="./exploits/idc/index.html"><img class="svg" src="../img/exploit.svg" alt="IDC" onmouseover="showInfo('IDC');" onmouseout="clearInfo();"></a></div></div>
-				<div class="divExploitOption"><div class="divMenuHeader">Update Blocker</div><div class="divMenuBody"><a href="./exploits/lightningmods/index.html"><img class="svg" src="../img/exploit.svg" alt="Update Blocker" onmouseover="showInfo('Update Blocker');" onmouseout="clearInfo();"></a></div></div>
-				<div class="divExploitOption"><div class="divMenuHeader">DB backup</div><div class="divMenuBody"><a href="./exploits/db-backup/index.html"><img class="svg" src="../img/exploit.svg" alt="DB backup" onmouseover="showInfo('DB Backup');" onmouseout="clearInfo();"></a></div></div>
+			<div class="optionsWrapper" id="exploits_405">
+				<div class="divExploitOption"><div class="divMenuHeader">Xvortex-HEN</div><div class="divMenuBody"><a href="./exploits/405/xvortex-hen/index.html"><img class="svg" src="../img/exploit.svg" alt="Xvortex-HEN-405" onmouseover="showInfo('Xvortex-HEN');" onmouseout="clearInfo();"></a></div></div>
+				<div class="divExploitOption"><div class="divMenuHeader">Xvortex-FTP</div><div class="divMenuBody"><a href="./exploits/405/xvortex-ftp/index.html"><img class="svg" src="../img/exploit.svg" alt="Xvortex-FTP-405" onmouseover="showInfo('Xvortex-FTP');" onmouseout="clearInfo();"></a></div></div>
+				<div class="divExploitOption"><div class="divMenuHeader">Xvortex-Dumper</div><div class="divMenuBody"><a href="./exploits/405/xvortex-dumper/index.html"><img class="svg" src="../img/exploit.svg" alt="Xvortex-Dumper-405" onmouseover="showInfo('Xvortex-Dumper');" onmouseout="clearInfo();"></a></div></div>
+				<div class="divExploitOption"><div class="divMenuHeader">Update Blocker</div><div class="divMenuBody"><a href="./exploits/405/lightningmods/index.html"><img class="svg" src="../img/exploit.svg" alt="Update Blocker-405" onmouseover="showInfo('Update Blocker');" onmouseout="clearInfo();"></a></div></div>
+				<div class="divExploitOption"><div class="divMenuHeader">DB backup</div><div class="divMenuBody"><a href="./exploits/405/db-backup/index.html"><img class="svg" src="../img/exploit.svg" alt="DB backup-405" onmouseover="showInfo('DB Backup');" onmouseout="clearInfo();"></a></div></div>
+				<div class="divExploitOption"><div class="divMenuHeader">VR enable</div><div class="divMenuBody"><a href="./exploits/405/vr-enable/index.html"><img class="svg" src="../img/exploit.svg" alt="VR enable-405" onmouseover="showInfo('VR enable');" onmouseout="clearInfo();"></a></div></div>
 			</div>
+			
+			<div class="optionsWrapper" id="exploits_455">
+				<div class="divExploitOption"><div class="divMenuHeader">Xvortex-HEN</div><div class="divMenuBody"><a href="./exploits/455/xvortex-hen/index.html"><img class="svg" src="../img/exploit.svg" alt="Xvortex-HEN-455" onmouseover="showInfo('Xvortex-HEN');" onmouseout="clearInfo();"></a></div></div>
+				<div class="divExploitOption"><div class="divMenuHeader">Xvortex-FTP</div><div class="divMenuBody"><a href="./exploits/455/xvortex-ftp/index.html"><img class="svg" src="../img/exploit.svg" alt="Xvortex-FTP-455" onmouseover="showInfo('Xvortex-FTP');" onmouseout="clearInfo();"></a></div></div>
+				<div class="divExploitOption"><div class="divMenuHeader">Xvortex-Dumper</div><div class="divMenuBody"><a href="./exploits/455/xvortex-dumper/index.html"><img class="svg" src="../img/exploit.svg" alt="Xvortex-Dumper-455" onmouseover="showInfo('Xvortex-Dumper');" onmouseout="clearInfo();"></a></div></div>
+				<div class="divExploitOption"><div class="divMenuHeader">DB backup</div><div class="divMenuBody"><a href="./exploits/455/db-backup/index.html"><img class="svg" src="../img/exploit.svg" alt="DB backup-455" onmouseover="showInfo('DB Backup');" onmouseout="clearInfo();"></a></div></div>
+				<div class="divExploitOption"><div class="divMenuHeader">VR enable</div><div class="divMenuBody"><a href="./exploits/455/vr-enable/index.html"><img class="svg" src="../img/exploit.svg" alt="VR enable-455" onmouseover="showInfo('VR enable');" onmouseout="clearInfo();"></a></div></div>			</div>			
+			
 			<div id="infoWrapper">			
 				<div class="divExploitInfo"><div class="divMenuHeader">Exploit info</div><div class="divMenuBody"></div><div id="exploitInfo">Move the mouse over any exploit to show the exploit info.</div></div>
 			</div>			
