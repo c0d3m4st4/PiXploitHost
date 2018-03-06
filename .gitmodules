@@ -10,3 +10,12 @@
 [submodule "xvortex-dumper"]
 	path = xvortex-dumper
 	url = https://github.com/xvortex/ps4-dumper
+[submodule "xvortex-dumper-455"]
+	path = xvortex-dumper-455
+	url = https://github.com/xvortex/ps4-dumper-vtx.git
+[submodule "xvortex-ftp-455"]
+	path = xvortex-ftp-455
+	url = https://github.com/xvortex/ps4-ftp-vtx.git
+[submodule "xvortex-hen-455"]
+	path = xvortex-hen-455
+	url = https://github.com/xvortex/ps4-hen-vtx.git
