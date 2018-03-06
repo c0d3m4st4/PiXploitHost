@@ -16,6 +16,8 @@ News
 
 4.55 support
 
+To upgrade from previous version, just follow the guide from the "Clone the repo and exploit submodules" subsection in the "Cloning PiXploitHost repository" section.
+
 **19/02/2018**
 
 4.05 support
