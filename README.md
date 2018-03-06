@@ -18,7 +18,7 @@ News
 
 **How to upgrade from previous version**
 
-To upgrade from previous version, just follow the guide from the "Clone the repo and exploit submodules" subsection in the "Cloning PiXploitHost repository" section.
+To upgrade from previous version, just follow the guide from the "Clone the repo and exploit submodules" subsection in the "Cloning PiXploitHost repository" section. Then follow the guide to edit the .htaccess file and reboot Apache. That's it.
 
 Please note, the "install" script will delete all contents in /var/www/html/ directory, so if you are hosting anything else in there, make sure to back it up first, or modify the script to meet your needs.  
 
@@ -181,14 +181,14 @@ Clone the repo and exploit submodules:
 Moving exploit host files to document root directory
 ----------------------------------------------------
 
-Run these commands in PiXploitHost directory to delete unnecessary files and move the needed ones to Apache2 document root
+Run these commands in PiXploitHost directory to move the needed files to Apache2 document root directory:
 
 	sudo chmod +x moveFiles.sh
     ./moveFiles.sh
 	cd ..
 	rm -rf PiXploitHost
 
-Please, note this will move all files to default Apache2 document root in /var/www/
+Please, note this will move all files to the default Apache2 document root directory in /var/www/
 
 If your document root points somewhere else, you will need to make the necessary changes in the script and server config.
 
@@ -212,4 +212,5 @@ Exploits code
 - [idc](https://github.com/idc)
 - [LightningMods](https://github.com/LightningMods)
 - [Specter](https://github.com/Cryptogenic)
+- [Stooged ](https://www.psxhax.com/members/stooged.371359/)
  
