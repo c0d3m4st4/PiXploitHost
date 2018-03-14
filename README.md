@@ -12,6 +12,18 @@ https://www.elotrolado.net/hilo_pixploithost-servidor-de-exploits-y-bloqueo-de-a
 News
 ----
 
+**14/03/2018**
+
+- Added specter exploit back so you can send bin payloads if not included.
+
+- Added PHP binary payload sender. You can connect to your Raspberry Pi web server from your smart phone and send the selected payload to the PS4 after loading Specter exploit in PS4 browser / user guide.
+
+- For the PHP binary payload sender you need to install PHP in your Raspberry Pi. Check PHP installation step in the guide. This is optional, only needed if you want to use the binary payload sender.
+
+- To access the PHP payload sender from your smart phone, just go to http://YOUR_RASPBERRY_PI_IP/ps4/payload_sender/
+
+- You need to place the binary payload files in /var/www/html/ps4/payload_sender direcroty. To do so you can use a SFTP client like WinSCP (https://winscp.net) or any other. Login to your Pi with the pi user and password, browse to that folder and upload the bin files.
+
 **06/03/2018**
 
 4.55 support
@@ -162,6 +174,14 @@ Restart Apache to apply changes:
 You can check if Apache is working by accessing http://YOUR_PI_IP from a browser in aany computer in your network.
 	
 
+Installing PHP (optional, only needed if you want to use the binary payload sender)
+-----------------------------------------------------------------------------------
+
+Install PHP with the following command:	
+	
+	sudo apt-get install php libapache2-mod-php -y
+	
+	
 Cloning PiXploitHost repository
 -------------------------------
 
