@@ -14,7 +14,7 @@ News
 
 **14/03/2018**
 
-- Added specter exploit back so you can send bin payloads if not included.
+- Added specter exploit back so you can send bin payloads if not included in PiXploitHost (don't have much time to test new released stuff).
 
 - Added PHP binary payload sender. You can connect to your Raspberry Pi web server from your smart phone and send the selected payload to the PS4 after loading Specter exploit in PS4 browser / user guide.
 
