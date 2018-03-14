@@ -26,17 +26,17 @@ News
 
 **06/03/2018**
 
-4.55 support
+- 4.55 support
 
-**How to upgrade from previous version**
+- **How to upgrade from previous version**
 
-To upgrade from previous version, just follow the guide from the "Clone the repo and exploit submodules" subsection in the "Cloning PiXploitHost repository" section. Then follow the guide to edit the .htaccess file and reboot Apache. That's it.
+	To upgrade from previous version, just follow the guide from the "Clone the repo and exploit submodules" subsection in the "Cloning PiXploitHost repository" section. Then follow the guide to edit the .htaccess file and reboot Apache. That's it.
 
-Please note, the "install" script will delete all contents in /var/www/html/ directory, so if you are hosting anything else in there, make sure to back it up first, or modify the script to meet your needs.  
+	Please note, the "install" script will delete all contents in /var/www/html/ directory, so if you are hosting anything else in there, make sure to back it up first, or modify the script to meet your needs.  
 
 **19/02/2018**
 
-4.05 support
+- 4.05 support
 
 Description
 -----------
