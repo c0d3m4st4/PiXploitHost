@@ -19,3 +19,9 @@
 [submodule "xvortex-hen-455"]
 	path = xvortex-hen-455
 	url = https://github.com/xvortex/ps4-hen-vtx.git
+[submodule "specter"]
+	path = specter
+	url = https://github.com/Cryptogenic/PS4-4.05-Kernel-Exploit.git
+[submodule "specter-455"]
+	path = specter-455
+	url = https://github.com/Cryptogenic/PS4-4.55-Kernel-Exploit.git
