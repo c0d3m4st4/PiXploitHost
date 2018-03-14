@@ -20,13 +20,14 @@ News
 
 - For the PHP binary payload sender you need to install PHP in your Raspberry Pi. Check PHP installation step in the guide. This is optional, only needed if you want to use the binary payload sender.
 
-- After you finish the exploit host installation, you need to edit the config.php file in the /var/www/html/ps4/payload_sender/bin_payloads/ directory, with your PS4 IP (you need to set it up with a static IP for this to work).
+- After you finish the exploit host installation, you need to edit the config.php file in the /var/www/html/ps4/payload_sender/ directory, with your PS4 IP (you need to set it up with a static IP for this to work).
 
 	nano /var/www/html/ps4/payload_sender/config.php
 
+- You need to place the binary payload files in /var/www/html/ps4/payload_sender/bin_payloads/ directory. To do so you can use a SFTP client like WinSCP (https://winscp.net) or any other. Login to your Pi with the pi user and password, browse to that folder and upload the bin files.	
+	
 - To access the PHP payload sender from your smart phone, just go to http://YOUR_RASPBERRY_PI_IP/ps4/payload_sender/
 
-- You need to place the binary payload files in /var/www/html/ps4/payload_sender/bin_payloads/ directory. To do so you can use a SFTP client like WinSCP (https://winscp.net) or any other. Login to your Pi with the pi user and password, browse to that folder and upload the bin files.
 
 **06/03/2018**
 
