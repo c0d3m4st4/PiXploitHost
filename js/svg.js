@@ -1,5 +1,3 @@
-//https://stackoverflow.com/questions/24933430/img-src-svg-changing-the-fill-color
-
 $(function(){
 	
 	//convert svg images to inline
