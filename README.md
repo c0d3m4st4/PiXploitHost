@@ -11,6 +11,9 @@ https://www.elotrolado.net/hilo_pixploithost-servidor-de-exploits-y-bloqueo-de-a
 
 News
 ----
+**26/03/2018**
+
+- Added Stooged's AppToUSB payloads
 
 **14/03/2018**
 
@@ -239,5 +242,5 @@ Exploits code
 - [idc](https://github.com/idc)
 - [LightningMods](https://github.com/LightningMods)
 - [Specter](https://github.com/Cryptogenic)
-- [Stooged ](https://www.psxhax.com/members/stooged.371359/)
+- [Stooged ](https://github.com/stooged)
  
