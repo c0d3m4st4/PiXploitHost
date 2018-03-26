@@ -13,7 +13,7 @@ News
 ----
 **26/03/2018**
 
-- Added Stooged's AppToUSB payloads
+- Added Stooged's AppToUSB payloads. If you don't want to do all the process again, just copy the AppToUSB directories from the "ps4/exploits/4xx" subdirectories, "ps4/index.html" file, and "js" and "css" directories. Overwrite when prompted.
 
 **14/03/2018**
 
