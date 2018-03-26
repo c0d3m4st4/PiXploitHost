@@ -241,7 +241,7 @@ Exploits code
 - [xvortex](https://github.com/xvortex)
 - [idc](https://github.com/idc)
 - [LightningMods](https://github.com/LightningMods)
-- [CelesteBlue] (https://github.com/CelesteBlue-dev)
+- [CelesteBlue](https://github.com/CelesteBlue-dev)
 - [Specter](https://github.com/Cryptogenic)
 - [Stooged ](https://github.com/stooged)
  
