@@ -11,6 +11,11 @@ https://www.elotrolado.net/hilo_pixploithost-servidor-de-exploits-y-bloqueo-de-a
 
 News
 ----
+
+**31/03/2018**
+
+- New icons, no more skulls for every option :)
+
 **26/03/2018**
 
 - Added Stooged's AppToUSB payloads. If you don't want to do all the process again, just copy the AppToUSB directories from the "ps4/exploits/4xx" subdirectories, "ps4/index.html" file, and "js" and "css" directories. Overwrite when prompted.
