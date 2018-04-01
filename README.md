@@ -15,7 +15,7 @@ News
 **31/03/2018**
 
 - New icons, no more skulls for every option :)
-- Removed update blocker. Not needed, xvortex hen does it.
+- Removed update blocker for 4.05. Not needed, xvortex hen does it.
 
 **26/03/2018**
 
