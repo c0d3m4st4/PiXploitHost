@@ -4,9 +4,7 @@ PiXploitHost
 Spanish guide - Guía en español
 -------------------------------
 
-**La guía en español la puedes ver en elotrolado.net**
-
-https://www.elotrolado.net/hilo_pixploithost-servidor-de-exploits-y-bloqueo-de-actualizaciones-en-una-raspberry-pi_2273155#p1745359498
+Ya no hay guía en Español, ya no voy a colaborar más en EOL así que lo he borrado, no voy a mandarles visitas gratuitamente.
 
 
 News
