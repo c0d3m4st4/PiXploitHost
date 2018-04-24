@@ -4,7 +4,6 @@ echo "Deleting old files..."
 rm -r /var/www/html/*
 
 echo "Moving exploit files..."
-mv ./lightningmods/Webpage\ Exploit/*.* ./ps4/exploits/405/lightningmods/
 mv ./xvortex-dumper/exploit/*.* ./ps4/exploits/405/xvortex-dumper/
 mv ./xvortex-ftp/exploit/*.* ./ps4/exploits/405/xvortex-ftp/
 mv ./xvortex-hen/exploit/*.* ./ps4/exploits/405/xvortex-hen/
@@ -16,7 +15,6 @@ mv ./xvortex-hen-455/exploit/*.* ./ps4/exploits/455/xvortex-hen/
 mv ./specter-455/*.* ./ps4/exploits/455/specter/
 
 echo "Cleaning up..."
-rm -rf ./lightningmods/
 rm -rf ./xvortex-dumper/
 rm -rf ./xvortex-ftp/
 rm -rf ./xvortex-hen/
