@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+	<html lang="en">	
+  	<head>
+    	<title>Pi Xploit Host by c0d3m4st4</title>
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+		<link rel="icon" type="image/x-icon" href="favicon.ico">		
+		<link rel="stylesheet" href="../css/owl.carousel.min.css">
+		
+		<style type="text/css">
+
+			html, body {
+				font-family:Impact, Charcoal, sans-serif;
+				text-align: center;	
+			}
+
+
+			h1 {
+				font-family: Impact, Charcoal, sans-serif;
+				font-size: 6rem;	
+				color: #4d4dff;
+				margin:5px;
+			}
+
+			main {
+				justify-content: space-around;	
+				-webkit-justify-content: space-around;
+			}
+
+			.owl-carousel{
+				display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+				display: -ms-flexbox;  /* TWEENER - IE 10 */
+				display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+				display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+				flex-flow: row wrap;
+				justify-content: space-around;	
+				-webkit-justify-content: space-around;
+			}
+
+			#infoWrapper{
+				width:100%;
+				display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+				display: -ms-flexbox;  /* TWEENER - IE 10 */
+				display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+				display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+				justify-content: space-around;	
+				-webkit-justify-content: space-around;
+			}
+
+			.divExploitOption {
+				margin: 10px;
+				border-radius: 10px;
+				border: 5px solid #000;
+				width: 195px;
+			}
+
+			.divExploitInfo {
+				margin: 10px;
+				border-radius: 10px;
+				border: 5px solid #000;
+				width: 95%;
+			}
+
+			.divMenuHeader {
+				font-family: Impact, Charcoal, sans-serif;
+				font-size: 30px;
+				padding: 0px;
+				text-align: center;
+				background: #f0f0f5;	
+				border-radius: 5px;
+				border: 1px solid black;
+				align:center;	
+			}
+
+			#exploitInfo {
+				font-family: Impact, Charcoal, sans-serif;
+				font-size: 25px;
+				text-align: left;
+				margin: 20px;
+			}
+
+			.divMenuBody {
+				margin: 10px;
+				text-align: center;	
+			}
+
+			footer {
+				font-family: Impact, Charcoal, sans-serif;
+				font-size: 25px;
+				text-align: center;
+			}
+
+			.nav {	
+				height: 100px;
+				width: 100px;	
+			}
+
+			.nav:hover {	
+				fill: #f00;	
+			}
+
+			.owl-carousel {
+				width: 90%;
+				margin: auto;
+			}
+		
+			#svg-nav-455-prev, #svg-nav-455-next {
+				width: 50px;
+				height: 50px;
+			}
+
+			.owl-prev-455 {
+				width: 50px;
+				height: 50px;
+				position: absolute;
+				top: 40%;
+				left: -60px;
+				display: block!IMPORTANT;
+				background-color: Transparent;
+				border: none;
+			}
+
+			.owl-next-455 {
+				width: 50px;
+				height: 50px;
+				position: absolute;
+				top: 40%;
+				right: -40px;
+				display: block!IMPORTANT;
+				background-color: Transparent;
+				border: none;
+			}
+			
+			@media screen and (max-width: 1024px) {
+				h1 {
+					font-family: Impact, Charcoal, sans-serif;
+					font-size: 2.5rem;	
+					color: #4d4dff;		
+				}
+			}
+
+			@media screen and (max-width: 480px) {
+				h1 {
+					font-family: Impact, Charcoal, sans-serif;
+					font-size: 2.5rem;	
+					color: #4d4dff;		
+				}
+			}
+
+			svg {
+				height: 150px;
+				width: 150px;
+			}
+
+			#back svg {
+				height: 75px;
+				width: 75px;
+			}			
+			
+			svg:hover path { fill: #f00; }
+
+			button:hover svg {
+				fill: #f00;
+			}
+		
+		</style>
+		
+		<script src="../js/jquery-3.3.1.min.js"></script>			
+		<script src="../js/owl.carousel.min.js"></script>		
+		
+		<script>
+
+
+
+			 $(function(){				
+				
+				var owl = $('.owl-carousel');
+
+				owl.owlCarousel({
+					loop:true,
+					margin:10,
+					autoWidth:false,
+					dots:false,
+					nav:true,
+					navText: ['<div><svg id="svg-nav-455-prev" xmlns="http://www.w3.org/2000/svg" width="445" height="445" viewBox="0 0 444.5 444.5"><path d="M213.1 222.4L351.9 83.7c7.1-7 10.6-15.7 10.6-25.8 0-10.2-3.5-18.8-10.6-25.8l-21.4-21.4C323.4 3.5 314.8 0 304.6 0s-18.8 3.5-25.8 10.6L92.6 196.4c-7 7-10.6 15.7-10.6 25.8s3.5 18.8 10.6 25.8l186.1 185.9c7.1 7 15.7 10.6 25.8 10.6s18.8-3.5 25.8-10.6l21.4-21.4c7.1-7 10.6-15.6 10.6-25.7 0-10.1-3.5-18.7-10.6-26L213.1 222.4z"/></svg></div>', '<div><svg id="svg-nav-455-next" xmlns="http://www.w3.org/2000/svg" width="445" height="445" viewBox="0 0 444.8 444.8"><path d="M352 196.7L165.9 10.8C159 3.6 150.5 0 140.2 0c-10.3 0-18.8 3.6-25.7 10.8L92.8 32.3c-7 7-10.6 15.6-10.6 25.7 0 9.9 3.5 18.6 10.6 26l138.8 138.5L92.8 361.2c-7 7-10.6 15.6-10.6 25.7 0 9.9 3.5 18.6 10.6 26l21.7 21.4c7 7 15.6 10.6 25.7 10.6 10.1 0 18.7-3.5 25.7-10.6l186.1-185.9c7-7.4 10.6-16.1 10.6-26C362.6 212.3 359.1 203.8 352 196.7z"/></svg></div>'],
+					navClass: ['owl-prev-455','owl-next-455'],
+					items:6
+				})				
+
+				$(document).on('keydown', function(e){
+
+					switch(e.keyCode) {
+						case 117: //117 PS4 - 39 PC - right - R1
+							//$('#svg-nav-455-next path').css('fill','#f00');
+							owl.trigger('next.owl');
+							//setTimeout(function(){ $('#svg-nav-455-next path').css('fill','#000'); }, 120);							
+							break;
+							
+						case 116: //116 PS4 - 37 PC - left - L1
+							//$('#svg-nav-455-prev path').css('fill','#f00');							
+							owl.trigger('prev.owl');
+							//setTimeout(function(){ $('#svg-nav-455-prev path').css('fill','#000'); }, 120);							
+							break;
+
+						case 118: //L2
+						case 119: //R2
+							//swith to dark theme
+							if ((localStorage.getItem("negativeTheme") === null)) {
+								setNegativeTheme(true);
+								localStorage.setItem("negativeTheme",true);
+							}else{
+								setNegativeTheme(false);
+								localStorage.removeItem("negativeTheme");
+							}							
+							break;							
+					} 					
+								
+				});				
+				
+				if (localStorage.getItem("negativeTheme") === null) {
+					setNegativeTheme(false);
+				}else{
+					setNegativeTheme(true);
+				}	
+				
+			});
+
+			function setNegativeTheme(bNegative) {
+			
+				if (bNegative) {
+					$('body').css("background-color","#111");
+					$('.divExploitOption').css("border-color","#eee");
+					$('.divExploitInfo').css("border-color","#eee");
+					$('h1').css("color","#eee");
+					$('h2').css("color","#eee");
+					$('footer').css("color","#eee");
+					$('#exploitInfo').css("color","#eee");				
+					$('svg path').css("fill","#eee");
+					$('svg').hover(
+						function(){$(this).find('path').css('fill', '#f00');}, 
+						function(){$(this).find('path').css('fill', '#eee');}
+					);
+					$('button').hover(
+						function(){$(this).find('path').css('fill', '#f00');}, 
+						function(){$(this).find('path').css('fill', '#eee');}
+					);
+				}else{
+					$('body').css("background-color","#fff");
+					$('.divExploitOption').css("border-color","#000");
+					$('.divExploitInfo').css("border-color","#000");
+					$('h1').css("color","#4d4dff");
+					$('h2').css("color","#000");
+					$('footer').css("color","#000");
+					$('#exploitInfo').css("color","#000");				
+					$('svg path').css("fill","#000");
+					$('svg').hover(
+						function(){$(this).find('path').css('fill', '#f00');}, 
+						function(){$(this).find('path').css('fill', '#000');}
+					);
+					$('button').hover(
+						function(){$(this).find('path').css('fill', '#f00');}, 
+						function(){$(this).find('path').css('fill', '#000');}
+					);				
+				}
+			}			
+			
+			function getSDContents(){
+			
+				$.ajax({
+						url:   '/sdcard',
+						//url:   'options_local.txt',
+						dataType : 'html',
+						type:  'get',
+						beforeSend: function () {
+						 	<!-- $("#exploits_455").html("Retrieving SD contents, please wait..."); -->
+							$("#exploitInfo").html("Retrieving SD content, please wait...");
+						},
+						success:  function (response) {
+						
+							//alert(response);
+							//$("#exploits_455").html(response);
+
+							var owl = $('.owl-carousel');
+							$('.owl-carousel').trigger('replace.owl.carousel', response).trigger('refresh.owl.carousel');
+							$('.owl-carousel').trigger('to.owl.carousel', 0);
+							$('#infoWrapper').css("display","none");
+							$('header h2').append(" - SD card menu");
+							$('footer').html("<div id='back'><a href='index.html'><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 2C6.5 2 2 6.5 2 12 2 17.5 6.5 22 12 22 17.5 22 22 17.5 22 12 22 6.5 17.5 2 12 2zM12 4C16.4 4 20 7.6 20 12 20 16.4 16.4 20 12 20 7.6 20 4 16.4 4 12 4 7.6 7.6 4 12 4zM11.3 6.3L6.3 11.3 5.6 12 6.3 12.7 11.3 17.7 12.7 16.3 9.4 13 18 13 18 11 9.4 11 12.7 7.7 11.3 6.3z\" font-family=\"Sans\" style=\"-inkscape-font-specification:Sans;block-progression:tb;line-height:normal;text-align:start;text-indent:0;text-transform:none\"/></svg></a></div>" + $('footer').html());
+							 
+						},
+						error: function(){ // will fire when timeout is reached
+							$("#exploitInfo").html("Error retrieving SD content!!! Please check your network connection and make sure SD card is inserted. ");
+						},
+						timeout: 5000 // sets timeout to 5 seconds
+				});
+				
+			}			
+			
+			var exploitInfo = {
+				"Xvortex-HEN":"xvortex HEN <br><br>Enables browser and homebrew, blocks network updates, adds debug settings menu item.",
+				"Xvortex-HEN-v1":"xvortex HEN v1<br><br>Use this one if you have problems with the other version.<br><br>Enables browser and homebrew, blocks network updates, adds debug settings menu item.",				
+				"Xvortex-FTP":"xvortex FTP <br><br>Starts an FTP server on port 1337.",
+				"Xvortex-Dumper":"xvortex dumper <br><br>Dumps game to external USB drive. Instructions:<ol><li>Turn on the console, insert disc (or run psn title), install all game patches.</li><li>Plug-in the USB stick, run the ps4-dumper payload (.bin or standalone).</li><li>Run your game, make sure to get main menu, minimize game (PS Button).</li><li>Wait till completion. When the process is finished the lights stop blinking and console will shutdown automatically (it is normal, not a panic shutdown).</li><li>Turn on your console, remove disc, uninstall the game (for further testing).</li><li>On PC: Plug-in the USB Stick, then open gengp4.exe, point into CUSAxxxxx dir and press Generate .GP4, You should get the 'Done.', then press Save .GP4.</li><li>Open .gp4 in the orbis-pub-gen and build .pkg file (You can get the orbis-pub-gen tool via PKG_Fake_Generator).</li><li>Run PS4HEN payload, install and test your .pkg.</li></ol>",
+				"Specter":"Specter <br><br>This exploit does include a loader that listens for payloads on port 9020 and will execute them upon receival.",
+				"DB Backup":"Stooged DB Backup<br><br>Backs up addcont.db, app.db, and gamesaves to external USB drive.<br>The payload will dump the save data into a folder called GameSaves, and addcont.db and app.db files into a folder called DB_Dackup on the usb drive.<br>Don't close the browser, wait until the notification  displays saying it finished.",
+				"HEN+VR":"Stooged HEN+VR<br><br>Allows Playstation VR headset to work even if it is on a higher FW. Includes HEN.", 
+				"Holy Grail":"m0rph3us1987's Holy Grail HEN",
+				"AppToUSB":"Stooged AppToUSB<br><br>Searches the entire /user/app folder and copies all installed fpkg games to USB from the system drive and creates the symlinks. It uses USB0 port.<br>If you install more games just run the payload again and it will copy any new games to the USB.<br>Important: You need to copy the .ini file in the payload directory to usb0:\PS4\AppToUsb.ini" ,
+				"Custom":"Launches the custom payload set in the PC / smartphone tools menu."
+			};
+
+			function showInfo(key) {
+				document.getElementById("exploitInfo").innerHTML = exploitInfo[key];
+			}
+
+			function clearInfo() {
+				document.getElementById("exploitInfo").innerHTML = "Move the mouse over any exploit to show the exploit info.";
+			}
+		</script>		
+		
+  	</head>
+	
+  	<body>
+  		<header>			
+  			<h1>Pi Xploit Host</h1>
+			<h2>Playstation 4 - FW 4.55</h2>
+  		</header>
+  		<main>
+			
+			<div class="owl-carousel" id="exploits_455">
+				<div class="divExploitOption"><div class="divMenuHeader">xvtx-HEN</div><div class="divMenuBody"><a href="./exploits/455/xvortex-hen/index.html"><svg onmouseover="showInfo('Xvortex-HEN');" onmouseout="clearInfo();" xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500"><path d="M400 0h-66.7c-55.1 0-100 44.9-100 100v100H25c-13.7 0-25 11.3-25 25v250c0 13.8 11.3 25 25 25h283.3c13.8 0 25-11.2 25-25V225c0-13.7-11.2-25-25-25H300V100c0-18.4 15-33.3 33.3-33.3H400c18.4 0 33.3 15 33.3 33.3v100H500V100C500 44.9 455.1 0 400 0zM200 433.3h-66.7l14.5-72.5c-8.8-6-14.5-16.1-14.5-27.5 0-18.4 14.9-33.3 33.3-33.3S200 314.9 200 333.3c0 11.4-5.7 21.5-14.5 27.5L200 433.3z"/></svg></a></div></div>
+				<div class="divExploitOption"><div class="divMenuHeader">xvtx-HEN v1</div><div class="divMenuBody"><a href="./exploits/455/xvortex-hen-v1/index.html"><svg onmouseover="showInfo('Xvortex-HEN-v1');" onmouseout="clearInfo();" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" height="500" width="500"><path d="m47.7 100.6h16.3l12.7 38 12.7-38h16.4L85.6 155.6H67.7Z"/><path d="m117.6 139.8h17.9V82.5l-18.4 4.3V71.2l18.3-4.3h19.3v72.9h17.9v15.8H117.6Z"/><path d="m400 0h-66.7c-55.1 0-100 44.9-100 100V200H25C11.3 200 0 211.3 0 225v250c0 13.8 11.3 25 25 25h283.3c13.8 0 25-11.2 25-25V225c0-13.7-11.2-25-25-25H300V100c0-18.4 15-33.3 33.3-33.3H400c18.4 0 33.3 15 33.3 33.3V200H500V100C500 44.9 455.1 0 400 0ZM200 433.3h-66.7l14.5-72.5c-8.8-6-14.5-16.1-14.5-27.5 0-18.4 14.9-33.3 33.3-33.3 18.4 0 33.3 14.9 33.3 33.3 0 11.4-5.7 21.5-14.5 27.5z"/></svg></a></div></div>				
+				<div class="divExploitOption"><div class="divMenuHeader">Specter</div><div class="divMenuBody"><a href="./exploits/455/specter/index.html"><svg onmouseover="showInfo('Specter');" onmouseout="clearInfo();" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 318.2 318.2"><path d="M189.3 94.3c.6-.5 1.6-1.4 3.1-2.9l-.1 4.4-.1 4v24.3h8.9v-42h-7.3l-13.5 10.8 4.3 5.3 4.7-3.9zm-67.2 0c.6-.5 1.6-1.4 3.1-2.9l-.1 4.4-.1 4v24.3h8.9v-42h-7.3L113 92.8l4.3 5.3 4.8-3.8zm67.2 57.6c.6-.5 1.6-1.4 3.1-2.9l-.1 4.4-.1 4v24.3h8.9v-42h-7.3l-13.5 10.8 4.3 5.3 4.7-3.9zm-29.4-27.2c5 0 8.7-1.8 11.1-5.3 2.4-3.5 3.6-9 3.6-16.3 0-7.1-1.2-12.5-3.7-16.1-2.5-3.7-6.1-5.5-11-5.5-5 0-8.7 1.8-11.1 5.3-2.4 3.5-3.6 9-3.6 16.4 0 7.1 1.2 12.5 3.7 16.1 2.5 3.5 6.2 5.4 11 5.4zM155.4 92c.9-2.2 2.4-3.4 4.5-3.4 2 0 3.5 1.1 4.5 3.4.9 2.3 1.4 6 1.4 11.1s-.5 8.8-1.4 11c-.9 2.3-2.4 3.4-4.5 3.4s-3.6-1.1-4.5-3.3c-.9-2.2-1.3-5.9-1.3-11.1 0-5.2.4-8.9 1.3-11.1z"/><path d="M283.1 52.7L232.6 2.2C231.2.8 229.3 0 227.3 0h-187c-4.1 0-7.5 3.4-7.5 7.5v303.2c0 4.1 3.4 7.5 7.5 7.5h237.5c4.1 0 7.5-3.4 7.5-7.5V58c0-2-.7-3.9-2.2-5.3zm-48.3-27.1l24.9 24.9h-24.9V25.6zM47.8 15h172v10.3h-172V15zm222.5 288.2H47.8V40.3h172v17.8c0 4.1 3.4 7.5 7.5 7.5h43v237.6z"/><path d="M126.3 139c-5 0-8.7 1.8-11.1 5.3s-3.6 9-3.6 16.4c0 7.1 1.2 12.5 3.7 16.1 2.5 3.6 6.1 5.5 11 5.5 5 0 8.7-1.8 11.1-5.3 2.4-3.5 3.6-9 3.6-16.3 0-7.1-1.2-12.5-3.7-16.1-2.5-3.8-6.1-5.6-11-5.6zm4.5 32.7c-.9 2.3-2.4 3.4-4.5 3.4s-3.6-1.1-4.5-3.3c-.9-2.2-1.3-5.9-1.3-11.1s.4-8.9 1.4-11.1c.9-2.2 2.4-3.4 4.5-3.4 2 0 3.5 1.1 4.5 3.4.9 2.3 1.4 6 1.4 11.1-.1 5.1-.6 8.7-1.5 11zm-1.2 84.5v-.3c2.3-.5 4.1-1.8 5.4-3.7 1.4-1.9 2.1-4.2 2.1-6.9 0-4.1-1.6-7.1-4.7-9-3.2-1.9-8-2.9-14.5-2.9h-16.7v48h18.7c5.6 0 10.1-1.3 13.4-3.8 3.3-2.5 4.9-5.9 4.9-10.3 0-2.9-.7-5.3-2-7.2-1.4-1.8-3.6-3.1-6.6-3.9zm-11.8-13c4.1 0 6.1 1.3 6.1 4 0 1.5-.5 2.6-1.5 3.4-1 .8-2.5 1.1-4.3 1.1h-3.9v-8.6h3.6zm.9 28.2h-4.6v-10.1h4.3c2.1 0 3.6.4 4.7 1.3s1.6 2.1 1.6 3.7c.1 3.4-2 5.1-6 5.1zm27.9-121l4.3 5.3 4.8-3.9c.6-.5 1.6-1.4 3.1-2.9l-.1 4.4-.1 4v24.3h8.9v-42h-7.3l-13.6 10.8zM204 255.1c0 2.9.2 6.8.5 11.7h-.2l-17.5-33.3h-16.9v48h11.5v-21.6c0-2.8-.2-6.9-.6-12.2h.3l17.5 33.8h17v-48H204v21.6zm-57.5-21.7h13v48h-13z"/></svg></a></div></div>								
+				<div class="divExploitOption"><div class="divMenuHeader">HEN+VR</div><div class="divMenuBody"><a href="./exploits/455/hen-vr/index.html"><svg onmouseover="showInfo('HEN+VR');" onmouseout="clearInfo();" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M274.3 0.9C268.4 0.4 262.4 0 256 0c-6.4 0-12.4 0.4-18.3 0.9v90.5h36.6V0.9z"/><path d="M356.6 80.9c0-0.4 0-0.8 0.1-1.2 1.4-18.6-4.5-36.9-16.5-51.2 -12.7-13.3-29.5-22.1-47.6-25.1v88h64V80.9z"/><path d="M411.4 194.7V134.4c0-3.9-2.2-6.4-3.3-6.4h-15v73.1h15C409.2 201.1 411.4 198.7 411.4 194.7z"/><path d="M155.4 80.9v10.5h64V3.5c-18.2 3-34.9 11.8-47.6 25.1 -11.9 14.3-17.8 32.6-16.5 51.2C155.4 80.1 155.4 80.5 155.4 80.9z"/><path d="M171.4 377.8l-31.5 17.3c10.9 22 55.1 43.8 116.1 43.8 53.1 0 99.7-16.9 114.2-40.3l-38.4-19.3c-15.4-7.7-25.2-23.5-25.1-40.7v-34.3c0-4.2 1.5-8.4 4.2-11.6 1.9-2.4 4.1-5.3 6.4-8.6 10.1-14.3 18.3-29.9 24.4-46.4H162.9c6.4 19.9 16.1 38.6 28.6 55.4 2.5 3.2 3.8 7.1 3.7 11.1v33.4C195.3 354.3 186.2 369.8 171.4 377.8z"/><path d="M466.3 490.7c0.1-26.9-15.1-51.6-39.2-63.6l-40.5-20.3c-17.6 30.1-68.9 50.4-130.6 50.4 -63.8 0-116.4-21.9-132.2-53.3l-41.1 22.5c-22.8 12.5-37 36.4-36.9 62.4l0 23.2h420.6L466.3 490.7z"/><path d="M146.3 219.4h219.4c5 0 9.1-4.1 9.1-9.1v-91.4c0-5-4.1-9.1-9.1-9.1H146.3c-5 0-9.1 4.1-9.1 9.1v91.4C137.2 215.3 141.2 219.4 146.3 219.4zM155.4 146.3c0-10.1 8.2-18.3 18.3-18.3h164.6c10.1 0 18.3 8.2 18.3 18.3v9.1c0 5-4.1 9.1-9.1 9.1s-9.1-4.1-9.1-9.1v-9.1H173.7v9.1c0 5-4.1 9.1-9.1 9.1 -5 0-9.1-4.1-9.1-9.1V146.3z"/><path d="M103.9 201.1h15V128h-15c-1.1 0-3.3 2.5-3.3 6.4v60.3C100.6 198.7 102.8 201.1 103.9 201.1z"/></svg></a></div></div>
+				<div class="divExploitOption"><div class="divMenuHeader">Holy Grail</div><div class="divMenuBody"><a href="./exploits/455/holygrail/index.html"><svg onmouseover="showInfo('Holy Grail');" onmouseout="clearInfo();" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 435 435"><path d="m350.5 0h-266c-6.9 0-12.5 5.6-12.5 12.5v48c0 76 58.6 138.6 133 145v13c-15.1 5.2-26 19.6-26 36.4s10.9 31.2 26 36.4v65.5c-15.4 2-30 7.6-42.9 16.6-15.9 11.1-28 26.5-34.9 44.6-1.5 3.8-1 8.2 1.4 11.6 2.3 3.4 6.2 5.4 10.3 5.4h157.2c4.1 0 8-2 10.3-5.4s2.8-7.7 1.4-11.6c-6.9-18.1-19-33.5-34.9-44.6-12.8-9-27.5-14.6-42.9-16.6v-65.5c15.1-5.2 26-19.6 26-36.4s-10.9-31.2-26-36.4v-13c74.4-6.4 133-68.9 133-145v-48c0-6.9-5.6-12.5-12.5-12.5zm-12.5 25v17.5h-241v-17.5h241zm-63 385h-115.1c13.3-17.9 34.7-29 57.5-29s44.2 11.1 57.5 29zm-57.5-141.6c-7.4 0-13.5-6.1-13.5-13.5s6.1-13.5 13.5-13.5 13.5 6.1 13.5 13.5-6.1 13.5-13.5 13.5zm0-87.4c-64.1 0-116.7-50.3-120.3-113.5h240.6c-3.6 63.2-56.2 113.5-120.3 113.5z"/><path d="m130.5 84c-3.3 0-6.5 1.3-8.8 3.7-2.3 2.3-3.7 5.6-3.7 8.8s1.3 6.5 3.7 8.8c2.3 2.3 5.6 3.7 8.8 3.7s6.5-1.3 8.8-3.7c2.3-2.3 3.7-5.5 3.7-8.8s-1.3-6.5-3.7-8.8c-2.3-2.3-5.5-3.7-8.8-3.7z"/><path d="m188.5 84c-3.3 0-6.5 1.3-8.8 3.7-2.3 2.3-3.7 5.6-3.7 8.8s1.3 6.5 3.7 8.8c2.3 2.3 5.6 3.7 8.8 3.7s6.5-1.3 8.8-3.7c2.3-2.3 3.7-5.5 3.7-8.8s-1.3-6.5-3.7-8.8c-2.3-2.3-5.5-3.7-8.8-3.7z"/><path d="m313.3 87.7c-2.3-2.3-5.5-3.7-8.8-3.7s-6.5 1.3-8.8 3.7c-2.3 2.3-3.7 5.6-3.7 8.8s1.3 6.5 3.7 8.8c2.3 2.3 5.6 3.7 8.8 3.7s6.5-1.3 8.8-3.7c2.3-2.3 3.7-5.5 3.7-8.8s-1.3-6.5-3.7-8.8z"/><path d="m246.5 84c-3.3 0-6.5 1.3-8.8 3.7-2.3 2.3-3.7 5.6-3.7 8.8s1.3 6.5 3.7 8.8c2.3 2.3 5.6 3.7 8.8 3.7s6.5-1.3 8.8-3.7c2.3-2.3 3.7-5.5 3.7-8.8s-1.3-6.5-3.7-8.8c-2.3-2.3-5.5-3.7-8.8-3.7z"/></svg></a></div></div>
+<!--				<div class="divExploitOption"><div class="divMenuHeader">Custom</div><div class="divMenuBody"><a href="/custom"><svg onmouseover="showInfo('Custom');" onmouseout="clearInfo();" xmlns="http://www.w3.org/2000/svg" width="379" height="379" viewBox="0 0 379.3 379.3"><path d="M142.9 124.5c-62.8 0-65.7 41.6-65.3 56.4 0.8 28.4 16.1 57.9 53.2 30.6 28.1-20.6 43.2-36.2 43.2-52.5C174.1 132.7 168.7 124.5 142.9 124.5z"/><path d="M189.7 0C86.4 0 8.6 83.9 8.6 195.1c0 63 35.1 99.3 96.3 99.8v28.1c0 54.7 37.8 56.3 42.1 56.3 5.8 0 11.5-1.3 16.6-3.6 3.8 1.4 7.9 2.1 12.3 2.1 4.2 0 8.9-0.6 13.9-2.6 5.3 2.1 10.1 2.6 13.6 2.6 4.5 0 8.7-0.8 12.7-2.2 5.1 2.3 10.7 3.6 16.5 3.6 4.3 0 41.8-1.6 41.8-56.1v-28.2c61.2-0.6 96.3-36.9 96.3-99.7C370.8 83.9 292.9 0 189.7 0zM272.8 266.6c-8.4 0-17.3-0.8-26.6-2.2 0 0 0 45.6 0 58.6 0 21-6.7 27.9-13.6 27.9 -7.2 0-14.5-7.5-14.5-14.1 0 0-6.3 12.7-14.7 12.7 -4.2 0-9-3.2-13.8-12.7 -4.8 9.6-9.5 12.7-13.7 12.7 -8.4 0-14.6-12.7-14.6-12.7 0 6.9-7.2 14.3-14.4 14.3 -6.9 0-13.8-7-13.8-28.1 0-12.9 0-58.8 0-58.8 -9.6 1.6-18.6 2.4-27.1 2.4 -41.5 0-69.2-19.8-69.2-71.5 0-92.2 60.6-166.9 152.8-166.9 92.2 0 152.8 74.6 152.8 166.9C342.5 247.2 314.5 266.6 272.8 266.6z"/><path d="M236.4 124.5c-25.8 0-31.2 8.3-31.2 34.5 0 16.3 15.2 31.9 43.2 52.5 37.2 27.3 52.4-2.2 53.2-30.6C302.1 166 299.2 124.5 236.4 124.5z"/><path d="M207.8 239.6c-15 0-18.1 15-18.1 15s-6.5-14.5-16.7-14.5c-22.7 0-5.7 21.6 3.9 48.9 3.1 8.8 12.8 5.5 12.8-4 0 9.9 9.3 14.6 13.9 1.5C213.4 258.9 227 239.6 207.8 239.6z"/></svg></a></div></div> -->
+				<div class="divExploitOption"><div class="divMenuHeader">xvtx-FTP</div><div class="divMenuBody"><a href="./exploits/455/xvortex-ftp/index.html"><svg onmouseover="showInfo('Xvortex-FTP');" onmouseout="clearInfo();" xmlns="http://www.w3.org/2000/svg" width="98" height="98" viewBox="0 0 98.4 98.4"><path d="M61.8 54.8c-0.8 0-1.3 0.1-1.6 0.1v5.1c0.3 0.1 0.7 0.1 1.3 0.1 2.1 0 3.3-1 3.3-2.8C64.9 55.8 63.8 54.8 61.8 54.8z"/><path d="M53.2 31.7c-2.2-2.2-5.7-2.2-7.9 0L20.4 56.6c-2.2 2.2-2.2 5.7 0 7.9l24.9 24.9c2.2 2.2 5.7 2.2 7.9 0l24.9-24.9c1.1-1 1.6-2.5 1.6-4s-0.6-2.9-1.6-4L53.2 31.7zM40.2 55.2h-6.6v3.9h6.2v3.2h-6.2v6.9h-3.9V52h10.5V55.2zM55 55.2h-4.7v14H46.4V55.2h-4.6v-3.3h13.2V55.2zM67.2 61.3c-1.3 1.2-3.3 1.8-5.6 1.8 -0.5 0-1 0-1.3-0.1v6.2h-3.9V52.2c1.2-0.2 2.9-0.4 5.3-0.4 2.4 0 4.1 0.5 5.3 1.4 1.1 0.8 1.8 2.3 1.8 4C68.7 58.9 68.2 60.3 67.2 61.3z"/><path d="M78.4 22.4c-0.5 0-1-0.3-1.4-0.8 -4-5.5-10.5-9-17.4-9 -0.5 0-1 0-1.5 0.1 -0.5 0-0.9-0.1-1.3-0.4 -4.2-3.2-9.3-5-14.7-5 -9.6 0-18.1 5.6-21.9 14.1 -0.3 0.6-0.8 1-1.5 1.1C8.2 23.9 0 32.9 0 43.9c0 9.7 6.5 17.9 15.3 20.6 -0.5-1.2-0.8-2.6-0.8-3.9 0-1.8 0.5-3.5 1.3-4.9 -4.3-2.1-7.4-6.6-7.4-11.7 0-7.2 5.8-13 13-13 0.4 0 0.7 0 1.1 0.1 2.1 0.2 3.9-1.2 4.4-3.2 1.8-7 8-11.9 15.2-11.9 4.1 0 8 1.6 10.9 4.5 1 1 2.4 1.4 3.8 1.1 0.9-0.2 1.8-0.3 2.7-0.3 5 0 9.5 2.8 11.7 7.4 0.8 1.6 2.5 2.6 4.2 2.4 0.4 0 0.9-0.1 1.3-0.1 7.2 0 13 5.8 13 13 0 5.1-3 9.6-7.4 11.7 0.9 1.5 1.3 3.2 1.3 4.9 0 1.4-0.3 2.7-0.8 3.9 8.8-2.7 15.3-10.9 15.3-20.6C98.4 32.5 89.6 23.2 78.4 22.4z"/></svg></a></div></div>
+				<div class="divExploitOption"><div class="divMenuHeader">xvtx-Dumper</div><div class="divMenuBody"><a href="./exploits/455/xvortex-dumper/index.html"><svg onmouseover="showInfo('Xvortex-Dumper');" onmouseout="clearInfo();" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 439.2 439.2"><path d="M219.6 263.3c11.2 0 22.4-4.3 30.9-12.8 8.3-8.3 12.8-19.3 12.8-30.9 0-11.7-4.6-22.7-12.8-30.9 -17.1-17.1-44.8-17.1-61.9 0s-17.1 44.8 0 61.9C197.2 259.1 208.4 263.3 219.6 263.3zM199.3 199.3c5.6-5.6 13-8.4 20.3-8.4 7.4 0 14.7 2.8 20.3 8.4 5.4 5.4 8.4 12.7 8.4 20.3 0 7.7-3 14.9-8.4 20.3 0 0 0 0 0 0 -11.2 11.2-29.5 11.2-40.7 0C188 228.7 188 210.5 199.3 199.3z"/><path d="M219.6 292.1c19.4 0 37.6-7.5 51.3-21.3 28.3-28.3 28.3-74.3 0-102.6s-74.3-28.3-102.6 0c-13.7 13.7-21.3 31.9-21.3 51.3s7.5 37.6 21.3 51.3C182 284.6 200.2 292.1 219.6 292.1zM178.9 178.9c11.2-11.2 26-16.8 40.7-16.8 14.7 0 29.5 5.6 40.7 16.8 22.4 22.4 22.4 59 0 81.4 -10.9 10.9-25.3 16.9-40.7 16.9s-29.8-6-40.7-16.9C156.5 237.9 156.5 201.3 178.9 178.9z"/><path d="M374.9 64.3C333.4 22.8 278.2 0 219.6 0c-58.7 0-113.8 22.8-155.3 64.3S0 160.9 0 219.6s22.8 113.8 64.3 155.3 96.6 64.3 155.3 64.3c58.7 0 113.8-22.8 155.3-64.3 41.5-41.5 64.3-96.6 64.3-155.3S416.3 105.8 374.9 64.3zM74.9 74.9C113.6 36.3 164.9 15 219.6 15c52.1 0 101.3 19.4 139.3 54.7l-82.8 82.8c-2.9 2.9-2.9 7.7 0 10.6 1.5 1.5 3.4 2.2 5.3 2.2s3.8-0.7 5.3-2.2l82.8-82.8c17.5 18.8 30.8 40.1 39.9 62.8l-12.7 12.8c-2.9 2.9-2.9 7.7 0 10.6 1.5 1.5 3.4 2.2 5.3 2.2s3.8-0.7 5.3-2.2l7.7-7.7c1.7 5.3 3.1 10.7 4.3 16.2L174.8 419.3c-5.5-1.2-10.9-2.7-16.2-4.3l217-217c2.9-2.9 2.9-7.7 0-10.6 -2.9-2.9-7.7-2.9-10.6 0L143 409.4c-22.9-9.2-44.2-22.7-62.7-40l81.9-81.9c2.9-2.9 2.9-7.7 0-10.6 -2.9-2.9-7.7-2.9-10.6 0l-81.9 81.9C-4.8 278.7-3.1 152.9 74.9 74.9zM364.3 364.3c-38.6 38.6-90 59.9-144.7 59.9 -9 0-17.9-0.6-26.7-1.7L422.4 193C430.3 253.9 410.9 317.6 364.3 364.3z"/><path d="M379 180c0.2 0.5 0.4 0.9 0.7 1.3 0.3 0.4 0.6 0.8 0.9 1.1 0.3 0.4 0.7 0.7 1.1 0.9 0.4 0.3 0.8 0.5 1.3 0.7 0.5 0.2 0.9 0.3 1.4 0.4 0.5 0.1 1 0.1 1.5 0.1s1 0 1.5-0.1c0.5-0.1 1-0.2 1.4-0.4s0.9-0.4 1.3-0.7c0.4-0.3 0.8-0.6 1.1-0.9 0.4-0.3 0.7-0.7 0.9-1.1 0.3-0.4 0.5-0.8 0.7-1.3 0.2-0.4 0.3-0.9 0.4-1.4 0.1-0.5 0.2-1 0.2-1.5 0-0.5 0-1-0.1-1.5 -0.1-0.5-0.2-0.9-0.4-1.4 -0.2-0.4-0.4-0.9-0.7-1.3 -0.3-0.4-0.6-0.8-0.9-1.1 -0.3-0.3-0.7-0.7-1.1-0.9 -0.4-0.3-0.8-0.5-1.3-0.7 -0.4-0.2-0.9-0.3-1.4-0.4 -1-0.2-2-0.2-2.9 0 -0.5 0.1-0.9 0.2-1.4 0.4 -0.4 0.2-0.9 0.4-1.3 0.7s-0.8 0.6-1.1 0.9c-0.4 0.3-0.7 0.7-0.9 1.1 -0.3 0.4-0.5 0.8-0.7 1.3 -0.2 0.5-0.3 0.9-0.4 1.4 -0.1 0.5-0.1 1-0.1 1.5 0 0.5 0.1 1 0.2 1.5C378.6 179.1 378.8 179.6 379 180z"/></svg></a></div></div>
+				<div class="divExploitOption"><div class="divMenuHeader">AppToUSB</div><div class="divMenuBody"><a href="./exploits/455/AppToUSB/index.html"><svg onmouseover="showInfo('AppToUSB');" onmouseout="clearInfo();" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286 286"><path d="M286 217.5c0-7.2-5.8-13-13-13H13c-7.2 0-13 5.8-13 13v52c0 7.2 5.8 13 13 13h260c7.2 0 13-5.8 13-13V217.5zM52 256.5H17v-27h35V256.5zM102 256.5H67v-27h35V256.5z"/><path d="M13.4 181.5h259.9c3.6 0 6.9-1.4 9-4.1 2.1-2.7 2.9-6.1 2.1-9.7l-34.8-152.7C248 8.4 241.6 3.5 234.9 3.5H51.8c-6.7 0-13.2 4.9-14.7 11.5L2.3 167.8c-0.8 3.5-0.1 7 2.1 9.6C6.5 180.1 9.8 181.5 13.4 181.5zM102.4 54.1c0.5-5.4 6.1-9.7 12.6-9.7 6.4 0 11.5 4.3 11.3 9.7 -0.2 4-3.2 7.6-7.4 9.2l-0.8 15 20 8.5 0.6-51.3h-7.4c-1.2 0-2.2-0.6-2.7-1.4 -0.5-0.8-0.4-1.8 0.3-2.6l12.1-12.7c0.6-0.6 1.5-0.9 2.4-0.9 1 0 1.9 0.3 2.4 0.9l12.1 12.6c0.7 0.7 0.8 1.8 0.3 2.6 -0.5 0.8-1.6 1.4-2.7 1.4h-7.4l0.5 41.8 19.6-8.3L167.6 56.5h-3.7c-1.8 0-3.3-1-3.4-2.5l-0.5-13.1c-0.1-1.4 1.3-2.4 3-2.4h16.7c1.7 0 3.2 1.1 3.4 2.4l1.3 13.1c0.1 1.5-1.2 2.5-3 2.5h-3.7l1.2 15.3c0.1 1.7-0.9 3.4-2.7 4.2l-27.4 11.6 0.3 30.4c8.5 2.4 15.1 10 15.5 19.4 0.5 11.8-9 21.9-21.2 21.9 -12.2 0-21.7-10-21.2-21.9 0.4-9.4 6.9-17 15.5-19.4l0.2-20.5 -27.9-12c-1.8-0.8-2.9-2.5-2.7-4.3l1.4-17.9C104.6 61.7 102 58.2 102.4 54.1z"/></svg></a></div></div>												
+				<div class="divExploitOption"><div class="divMenuHeader">DB backup</div><div class="divMenuBody"><a href="./exploits/455/db-backup/index.html"><svg onmouseover="showInfo('DB Backup');" onmouseout="clearInfo();" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path d="M336.3 383.8v-20.3h58.7c2.4 0 4.4-1.9 4.4-4.4v-42c0-2.4-2-4.4-4.4-4.4h-58.7V292.5c0-1.8-1.1-3.4-2.7-4 -1.6-0.7-3.5-0.3-4.7 0.9l-45.6 45.6c-0.8 0.8-1.3 1.9-1.3 3.1 0 1.2 0.5 2.3 1.3 3.1l45.6 45.6c1.2 1.2 3.1 1.6 4.7 0.9C335.3 387.2 336.3 385.6 336.3 383.8z"/><path d="M437.6 251c-21.1-23.4-49.6-38.3-80.6-42.2 -1.1-2.1-2.7-5.1-3.2-5.9l-1.2-2.2c4.8-7.3 7.2-15 7.2-22.7v-45c0-6.7-1.8-13.3-5.4-19.8l-0.4-0.7c1.4-3.5 2.1-6.8 2.1-10 0-18.3-17.5-33.6-50.7-44.5 -28.2-9.2-66.5-14.5-105-14.5 -38.5 0-76.8 5.3-105 14.5 -33.1 10.8-50.7 26.2-50.7 44.5 0 3.2 0.7 6.5 2.1 10l-0.4 0.7c-3.6 6.6-5.4 13.2-5.4 19.9v45c0 7.8 2.4 15.4 7.2 22.7l-1.3 2.2c-4 6.9-6 13.9-6 20.8v45.1c0 7.6 2.3 15 6.9 22.1l-0.9 1.6c-4 6.9-6 13.9-6 20.8v45.1c0 20.6 16.7 39.6 47.1 53.4 29.6 13.5 69.5 21 112.4 21 15.7 0 31.6-1.1 47.2-3.3 24.8 25.3 57.8 39.2 93.1 39.2 71.9 0 130.4-58.5 130.4-130.4C471.1 306 459.2 275 437.6 251zM101.7 79.5c26-8.6 61-13.4 98.6-13.4 37.6 0 72.6 4.7 98.6 13.4 23.7 7.9 34.3 17.2 34.3 23 0 5.8-10.6 15.1-34.3 23 -26 8.6-61 13.4-98.6 13.4 -37.6 0-72.6-4.7-98.6-13.4 -23.7-7.9-34.3-17.2-34.3-23C67.4 96.7 78 87.3 101.7 79.5zM63.7 146.5c25.9 17.9 78.3 29.2 136.7 29.2 58.4 0 110.8-11.3 136.7-29.2v31.5c0 11.6-13.9 24.4-37.1 34.3 -26.5 11.2-61.8 17.4-99.6 17.4 -37.7 0-73.1-6.2-99.5-17.4 -23.3-9.8-37.1-22.7-37.1-34.3L63.7 146.5 63.7 146.5zM200.3 409.9c-37.7 0-73.1-6.2-99.5-17.4 -23.3-9.8-37.1-22.6-37.1-34.2v-35.9c28 21.8 79.4 35.1 136.7 35.1 3.9 0 7.6-0.2 11.3-0.4 2.7 18.2 9.3 35.8 19.2 51.4C220.7 409.4 210.5 409.9 200.3 409.9zM211.5 320c-3.6 0.2-7.4 0.4-11.2 0.4 -37.7 0-73.1-6.2-99.5-17.4 -23.3-9.8-37.1-22.6-37.1-34.2v-36c27.9 21.8 79.4 35.1 136.7 35.1 10 0 20.4-0.5 31.6-1.6C221.2 282.4 214.2 300.8 211.5 320zM340.7 436.7c-54.3 0-98.6-44.2-98.6-98.6 0-54.3 44.2-98.6 98.6-98.6 54.3 0 98.6 44.2 98.6 98.6C439.2 392.5 395 436.7 340.7 436.7z"/></svg></a></div></div>
+			</div>			
+			
+			<div id="infoWrapper">			
+				<div class="divExploitInfo"><div class="divMenuHeader">Info</div><div class="divMenuBody"></div><div id="exploitInfo">Move the mouse over any exploit to show the exploit info.</div></div>
+			</div>			
+		</main>
+		<footer>
+			@c0d3m4st4 - &copy;2018
+		</footer>
+	</body>
+	
+</html>
