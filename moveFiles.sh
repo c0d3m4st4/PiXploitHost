@@ -12,7 +12,7 @@ mv ./specter-455/*.* ./PiXploitHost/ps4/exploits/455/specter/
 mv ./xvortex-dumper-505/exploit/*.* ./PiXploitHost/ps4/exploits/505/xvortex-dumper/
 mv ./xvortex-ftp-505/exploit/*.* ./PiXploitHost/ps4/exploits/505/xvortex-ftp/
 mv ./xvortex-hen-505/exploit/*.* ./PiXploitHost/ps4/exploits/505/xvortex-hen/
-mv ./mira-hen/exploit/*.* ./PiXploitHost/ps4/exploits/505/mira-hen/
+mv ./mira-hen/*.* ./PiXploitHost/ps4/exploits/505/mira-hen/
 
 
 echo "Cleaning up..."
