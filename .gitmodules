@@ -25,3 +25,6 @@
 [submodule "xvortex-hen-455-v1"]
 	path = xvortex-hen-455-v1
 	url = https://github.com/xvortex/ps4-hen-vtx.git
+[submodule "mira-hen"]
+	path = mira-hen
+	url = https://github.com/Cryptogenic/PS4-5.05-Kernel-Exploit.git
