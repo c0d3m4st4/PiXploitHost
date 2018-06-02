@@ -4,7 +4,6 @@ echo "Deleting old files..."
 rm -r /var/www/html/PiXploitHost/*
 
 echo "Moving exploit files..."
-mv ./xvortex-dumper-455/exploit/*.* ./PiXploitHost/ps4/exploits/455/xvortex-dumper/
 mv ./xvortex-ftp-455/exploit/*.* ./PiXploitHost/ps4/exploits/455/xvortex-ftp/
 mv ./xvortex-hen-455/exploit/*.* ./PiXploitHost/ps4/exploits/455/xvortex-hen/
 mv ./xvortex-hen-455-v1/exploit/*.* ./PiXploitHost/ps4/exploits/455/xvortex-hen-v1/
@@ -17,7 +16,6 @@ mv ./mira-hen/exploit/*.* ./PiXploitHost/ps4/exploits/505/mira-hen/
 
 
 echo "Cleaning up..."
-rm -rf ./xvortex-dumper-455/
 rm -rf ./xvortex-ftp-455/
 rm -rf ./xvortex-hen-455/
 rm -rf ./xvortex-hen-455-v1/
