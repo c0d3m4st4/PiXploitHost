@@ -19,3 +19,6 @@
 [submodule "xvortex-dumper-505"]
 	path = xvortex-dumper-505
 	url = https://github.com/xvortex/ps4-dumper-vtx.git
+[submodule "xvortex-hen-455"]
+	path = xvortex-hen-455
+	url = https://github.com/xvortex/ps4-hen-vtx.git
