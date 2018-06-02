@@ -33,6 +33,6 @@ echo "Self deleting..."
 rm moveFiles.sh
 
 echo "Moving files to web server document root..."
-mv ./* /var/www/html/
+mv ./* /var/www/html/PiXploitHost/
 
 echo "Done!"
