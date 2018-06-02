@@ -10,6 +10,13 @@ https://www.elotrolado.net/hilo_pixploithost-servidor-de-exploits-y-bloqueo-de-a
 News
 ----
 
+**02/06/2018**
+
+- Dropped support for 4.05 (no reason to stay there, exploit for 4.55 was much more stable if you still don't want to update to 5.05).
+- Added support for 5.05.
+- If you are updating from my previous Pi Xploit Host version, you will need to edit the .htaccess file as it's been changed to support auto redirection to your FW version explpoits menu. Follow the manual.
+- If you are updating from my previous Pi Xploit Host version, you may want to delete unused stuff in html directory, all the files related to the PiXploitHost are now placed in the PiXploitHost subdirectory.
+
 **31/03/2018**
 
 - New icons, no more skulls for every option :)
@@ -156,7 +163,15 @@ Add a redirect rule in var/www/html/.htaccess file
 
 Place the following text in the file:
 	
-	RedirectMatch 301 /document/[a-z]{2}/ps4(.*) $1
+	RewriteEngine on
+	RewriteBase /
+
+	RewriteCond %{HTTP_USER_AGENT}  "PlayStation 4 5.05"    [NC]
+	RewriteRule ^document/[a-z]{2}/ps4(.*)$  PiXploitHost/ps4/ps4_505_index.html      [L,R]
+
+	RewriteCond %{HTTP_USER_AGENT}  "PlayStation 4 4.55"    [NC]
+	RewriteRule ^document/[a-z]{2}/ps4(.*)$  PiXploitHost/ps4/ps4_455_index.html      [L,R]
+
 
 Hit Control X to exit nano, followed by Y + enter to save the file.
 	
