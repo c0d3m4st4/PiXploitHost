@@ -158,6 +158,10 @@ Set the proper permissions for user pi
 	sudo chmod u+rxw,g+rx-w,o-rwx /var/www
 	sudo chmod g+s /var/www
 
+Load Apache rewrite module:
+
+	sudo a2enmod rewrite
+	
 
 Add a redirect rule in var/www/html/.htaccess file
 
